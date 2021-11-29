@@ -1,0 +1,59 @@
+#auth-page .form-area {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+#auth-page .form-area .form-card {
+    background-color: var(--whiteColor);
+    width: 100%;
+    max-width: 600px;
+    box-shadow: var(--boxShadowMin);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+#auth-page .or-area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+#auth-page .or-area::before {
+    display: block;
+    content: '';
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+#auth-page .or-area::after {
+    display: block;
+    content: '';
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+
+    #auth-page .form-area {
+        padding: 20px;
+    }
+
+    #auth-page .form-area .form-card {
+        background-color: transparent;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0 20px;
+    }
+}

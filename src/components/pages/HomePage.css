@@ -1,0 +1,39 @@
+#home {
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+    transition: all .5s ease-in;
+}
+
+#home .book-item {
+    background-color: var(--whiteColor);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#home .book-item:last-child {
+    margin-bottom: 0;
+}
+
+#home .book-item svg {
+    width: 40px;
+    height: 40px;
+    color: var(--activeColor);
+}
+
+#home .book-item .details{
+    margin-left: 10px;
+}
+
+#home .book-item .details .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#home .book-item .details .author {
+    margin-top: 5px;
+}
